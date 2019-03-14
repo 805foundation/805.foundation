@@ -10,6 +10,12 @@ body {
 .bg-black {
   background-color: #000000;
 }
+.bg-orange {
+  background-color: #FFA500; 
+}
+.bg-peach {
+  background-color: #FFE7BC; 
+}
 .bg-contact {
   background-image: url("/img/contact/globe.jpg");
   background-color: #000000;
@@ -23,6 +29,12 @@ body {
 /* Text Colors */
 .text-black {
   color: #000000;
+}
+.text-orange {
+  color: #FFA500;
+}
+.text-peach {
+  color: #FFE7BC;
 }
 
 /* Border Width */

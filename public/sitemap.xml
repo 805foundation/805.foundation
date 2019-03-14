@@ -33,6 +33,11 @@
   </url>
   
   <url>
+    <loc>http://example.org/services/</loc>
+    <lastmod>2018-10-03T16:43:47-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://example.org/softwaredevelopment/</loc>
     <lastmod>2018-10-03T16:43:47-07:00</lastmod>
   </url>
