@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>http://example.org/805family/</loc>
+    <lastmod>2018-10-03T16:43:47-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://example.org/805productions/</loc>
     <lastmod>2018-10-03T16:43:47-07:00</lastmod>
   </url>
@@ -23,11 +28,6 @@
   </url>
   
   <url>
-    <loc>http://example.org/graphicdesign/</loc>
-    <lastmod>2018-10-03T16:43:47-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://example.org/project619/</loc>
     <lastmod>2018-10-03T16:43:47-07:00</lastmod>
   </url>
@@ -38,17 +38,7 @@
   </url>
   
   <url>
-    <loc>http://example.org/softwaredevelopment/</loc>
-    <lastmod>2018-10-03T16:43:47-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://example.org/team/</loc>
-    <lastmod>2018-10-03T16:43:47-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/videoproduction/</loc>
     <lastmod>2018-10-03T16:43:47-07:00</lastmod>
   </url>
   

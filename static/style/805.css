@@ -1,32 +1,39 @@
 /* Global */
 body {
-    width: 100%;
-    overflow-x: hidden;
-    margin: 0;
-    border-left: 0;
-    font-family: "Raleway", sans-serif;
-  }
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  border-left: 0;
+  font-family: "Raleway", sans-serif;
+}
+/* Opacity */
+.opacity-8{
+  opacity: 0.85;
+}
 /* Background Colors */
 .bg-black {
   background-color: #000000;
 }
 .bg-orange {
-  background-color: #FFA500; 
+  background-color: #ffa500;
 }
 .bg-peach {
-  background-color: #FFE7BC; 
+  background-color: #ffe7bc;
 }
 .bg-contact {
   background-image: url("/img/contact/globe.jpg");
   background-color: #000000;
 }
 .bg-gradient {
-  background-image: linear-gradient(to bottom right, #6200B3, #F40C84);
+  background-image: linear-gradient(to bottom right, #6200b3, #f40c84);
+}
+.bg-udemy {
+  background-image: linear-gradient(to bottom right, #5C1734, #DA4A4C);
 }
 
 /* Font */
-.font-fugaz{
-    font-family: 'Fugaz One', cursive;
+.font-fugaz {
+  font-family: "Fugaz One", cursive;
 }
 
 /* Text Colors */
@@ -34,10 +41,10 @@ body {
   color: #000000;
 }
 .text-orange {
-  color: #FFA500;
+  color: #ffa500;
 }
 .text-peach {
-  color: #FFE7BC;
+  color: #ffe7bc;
 }
 
 /* Border Width */
