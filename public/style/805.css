@@ -4,10 +4,10 @@ body {
   overflow-x: hidden;
   margin: 0;
   border-left: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 /* Opacity */
-.opacity-8{
+.opacity-8 {
   opacity: 0.85;
 }
 /* Background Colors */
@@ -28,7 +28,11 @@ body {
   background-image: linear-gradient(to bottom right, #6200b3, #f40c84);
 }
 .bg-udemy {
-  background-image: linear-gradient(to bottom right, #5C1734, #DA4A4C);
+  background-image: linear-gradient(to bottom right, #5c1734, #da4a4c);
+}
+.bg-blue {
+  background: #007bff;
+  background: linear-gradient(to right, #0062e6, #33aeff);
 }
 
 /* Font */
