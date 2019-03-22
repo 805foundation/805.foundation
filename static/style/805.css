@@ -9,6 +9,9 @@ body {
 h1 {
   font-size: 5em;
 }
+h2 {
+  font-size: 3em;
+}
 /* Opacity */
 .opacity-8 {
   opacity: 0.85;
@@ -24,7 +27,7 @@ h1 {
   background-color: #000000;
 }
 .bg-foundation {
-  background-color: #000000;
+  background-color: #6200b3;
 }
 .bg-contact {
   background-image: url("/img/contact/globe.jpg");
@@ -40,17 +43,33 @@ h1 {
 .text-black {
   color: #000000;
 }
-.text-foundation{
+.text-foundation {
   color: #000000;
 }
-.text-foundation:hover{
+.text-foundation:hover {
   color: #6200b3;
+  transition-duration: 0.6s;
 }
 
 /* Border Width */
 .border-0 {
   border-width: 0em;
 }
+
+/* Buttons */
+.btn-outline-foundation{
+  border-width: 1px;
+  border-color: #6200b3;
+  background-color: transparent;
+  color: #6200b3;
+}
+.btn-outline-foundation:hover {
+  background-color: #6200b3;
+  color: #ffffff;
+  transition-duration: .5s;
+  
+}
+
 
 /* Pricing */
 section.pricing {
