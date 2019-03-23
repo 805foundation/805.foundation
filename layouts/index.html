@@ -8,20 +8,26 @@
     <div class="text-center">
       <div class="" style="height:15em;"></div>
       <h1
-        class="text-uppercase font-weight-bold font-foundation text-foundation py-3"
+        class="display-3 font-weight-bold font-foundation text-foundation py-3"
       >
-        who we are
+        <strong>
+          Brand development, together.
+        </strong>
       </h1>
-      <p class="text-foundation">
-        Welcome to 805! We are a full-service agency for the 21st century. We
-        help businesses, aspiring entrepreneurs, and individuals grow their
-        company or brand by providing a staff of developpers, designers, and
-        marketing specialist ready at their beck and call. We deliver hard work
-        and heart because we believe in caring about our 805 family.
-      </p>
-      <a href="/805family/" class=""
-        ><button class="btn text-foundation font-foundation text-uppercase">
-          explore the 805 family
+      <h3 class="text-foundation py-3">
+        Don't build your business alone. Don't waste time on the technical part.
+        Focus on what truly matters, your vision.
+      </h3>
+      <h3 class="text-foundation py-3">
+        805 provides dedicated teams of marketing specialists, software
+        developpers, and graphic designers.
+      </h3>
+      <div class="py-3"></div>
+      <a href="/services/" class=""
+        ><button
+          class="btn btn-outline-foundation text-foundation font-foundation px-3 py-2"
+        >
+          Explore the 805 Family
         </button></a
       >
       <div class="" style="height:15em;"></div>
@@ -29,7 +35,25 @@
   </div>
 </div>
 
-<!-- {{ partial "clients" . }} -->
+{{ partial "clients" . }}
+
+<div class="card bg-dark text-black">
+  <img class="card-img" src="/img/redefine.png" alt="Card image" />
+  <div class="card-img-overlay text-white">
+    <div class="container">
+      <div class="py-3"></div>
+      <h1 class="card-title">
+        <strong>
+          Redefine Education
+        </strong>
+      </h1>
+      <p class="card-text">
+        Invest in the next generation and provide opportunities to develop
+        practical industry level skills through work-based learning.
+      </p>
+    </div>
+  </div>
+</div>
 
 <div class="py-4"></div>
 
@@ -79,12 +103,20 @@
     </div>
   </div>
 </div>
+<div class="container text-center">
+  <a href="/805family/" class=""
+    ><button
+      class="btn btn-outline-foundation text-foundation font-foundation px-3 py-2"
+    >
+      Explore the 805 Family
+    </button></a
+  >
+</div>
 <div class="container-fluid text-center py-5">
   <h2 class="text-foundation font-weight-bold font-foundation text-uppercase">
     Culture
   </h2>
   <p class="text-foundation">Culture</p>
-  
 </div>
 
 {{ partial "contact" . }}
