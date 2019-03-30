@@ -4,7 +4,7 @@ body {
   overflow-x: hidden;
   margin: 0;
   border-left: 0;
-  font-family: "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 /* Opacity */
 .opacity-8 {
@@ -18,7 +18,7 @@ body {
   background-image: linear-gradient(to bottom right, #287752, #ffffff);
 }
 .bg-blue {
-  background-image: linear-gradient(to bottom right, #2A96BA, #E0F3F9);
+  background-image: linear-gradient(to bottom right, #2a96ba, #e0f3f9);
 }
 .bg-black {
   background-color: #000000;
@@ -54,7 +54,19 @@ body {
 }
 
 /* Buttons */
-.btn-outline-foundation{
+.btn-foundation {
+  border-width: 1px;
+  border-color: #ffffff;
+  background-color: #ffffff;
+  color: #4d4d4d;
+}
+.btn-foundation:hover {
+  border-width: 1px;
+  border-color: #6200b3;
+  background-color: #6200b3;
+  color: #ffffff;
+}
+.btn-outline-foundation {
   border-width: 1px;
   border-color: #6200b3;
   background-color: transparent;
@@ -63,10 +75,8 @@ body {
 .btn-outline-foundation:hover {
   background-color: #6200b3;
   color: #ffffff;
-  transition-duration: .5s;
-  
+  transition-duration: 0.5s;
 }
-
 
 /* Pricing */
 section.pricing {
@@ -175,7 +185,8 @@ header .overlay {
 
 @media (pointer: coarse) and (hover: none) {
   header {
-    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black
+      no-repeat center center scroll;
   }
   header video {
     display: none;
@@ -183,10 +194,18 @@ header .overlay {
 }
 
 /* Full Page Image Header */
-.masthead {
-  height: 150vh;
+.ullerickmasthead {
+  height: 100vh;
   min-height: 500px;
-  background-image: url('https://images.unsplash.com/photo-1498335746477-0c73d7353a07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1258&q=80');
+  background-image: url("/img/masthead/mattullerick.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.iscofmasthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("/img/masthead/iscof1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
