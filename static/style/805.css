@@ -24,7 +24,7 @@ body {
   background-color: #000000;
 }
 .bg-foundation {
-  background-color: #6200b3;
+  background-color: #43C4EF;
 }
 .bg-contact {
   background-image: url("/img/contact/globe.jpg");
@@ -33,7 +33,7 @@ body {
 
 /* Font */
 .font-foundation {
-  font-family: "Helvetica", sans-sarif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Text Colors */
@@ -44,7 +44,7 @@ body {
   color: #262626;
 }
 .text-foundation:hover {
-  color: #6200b3;
+  color: #43C4EF;
   transition-duration: 0.6s;
 }
 
@@ -62,18 +62,18 @@ body {
 }
 .btn-foundation:hover {
   border-width: 1px;
-  border-color: #6200b3;
-  background-color: #6200b3;
+  border-color: #43C4EF;
+  background-color: #43C4EF;
   color: #ffffff;
 }
 .btn-outline-foundation {
   border-width: 1px;
-  border-color: #6200b3;
+  border-color: #43C4EF;
   background-color: transparent;
-  color: #6200b3;
+  color: #43C4EF;
 }
 .btn-outline-foundation:hover {
-  background-color: #6200b3;
+  background-color: #43C4EF;
   color: #ffffff;
   transition-duration: 0.5s;
 }
