@@ -14,11 +14,11 @@ body {
 .bg-insta {
   background-image: linear-gradient(to bottom right, #6200b3, #f40c84);
 }
-.bg-hulk {
-  background-image: linear-gradient(to bottom right, #287752, #ffffff);
+.bg-peach {
+  background-image: linear-gradient(to bottom right, #ff758c, #ff7eb3);
 }
 .bg-blue {
-  background-image: linear-gradient(to bottom right, #b0ebff, #e0f3f9);
+  background-image: linear-gradient(to bottom right,#89f7fe, #66a6ff);
 }
 .bg-black {
   background-color: #000000;
@@ -44,6 +44,13 @@ body {
   color: #262626;
 }
 .text-foundation:hover {
+  color: #43C4EF;
+  transition-duration: 0.6s;
+}
+.text-invert {
+  color: #ffffff;
+}
+.text-invert:hover {
   color: #43C4EF;
   transition-duration: 0.6s;
 }
