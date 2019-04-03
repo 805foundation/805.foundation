@@ -11,8 +11,8 @@ body {
   opacity: 0.85;
 }
 /* Background Colors */
-.bg-insta {
-  background-image: linear-gradient(to bottom right, #6200b3, #f40c84);
+.bg-rock {
+  background-image: linear-gradient(to bottom right, #434343, #000000);
 }
 .bg-peach {
   background-image: linear-gradient(to bottom right, #ff758c, #ff7eb3);

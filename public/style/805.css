@@ -11,20 +11,20 @@ body {
   opacity: 0.85;
 }
 /* Background Colors */
-.bg-insta {
-  background-image: linear-gradient(to bottom right, #6200b3, #f40c84);
+.bg-rock {
+  background-image: linear-gradient(to bottom right, #434343, #000000);
 }
-.bg-hulk {
-  background-image: linear-gradient(to bottom right, #287752, #ffffff);
+.bg-peach {
+  background-image: linear-gradient(to bottom right, #ff758c, #ff7eb3);
 }
 .bg-blue {
-  background-image: linear-gradient(to bottom right, #2a96ba, #e0f3f9);
+  background-image: linear-gradient(to bottom right,#89f7fe, #66a6ff);
 }
 .bg-black {
   background-color: #000000;
 }
 .bg-foundation {
-  background-color: #6200b3;
+  background-color: #43C4EF;
 }
 .bg-contact {
   background-image: url("/img/contact/globe.jpg");
@@ -33,7 +33,7 @@ body {
 
 /* Font */
 .font-foundation {
-  font-family: "Helvetica", sans-sarif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Text Colors */
@@ -44,7 +44,14 @@ body {
   color: #262626;
 }
 .text-foundation:hover {
-  color: #6200b3;
+  color: #43C4EF;
+  transition-duration: 0.6s;
+}
+.text-invert {
+  color: #ffffff;
+}
+.text-invert:hover {
+  color: #43C4EF;
   transition-duration: 0.6s;
 }
 
@@ -62,84 +69,20 @@ body {
 }
 .btn-foundation:hover {
   border-width: 1px;
-  border-color: #6200b3;
-  background-color: #6200b3;
+  border-color: #43C4EF;
+  background-color: #43C4EF;
   color: #ffffff;
 }
 .btn-outline-foundation {
   border-width: 1px;
-  border-color: #6200b3;
+  border-color: #43C4EF;
   background-color: transparent;
-  color: #6200b3;
+  color: #43C4EF;
 }
 .btn-outline-foundation:hover {
-  background-color: #6200b3;
+  background-color: #43C4EF;
   color: #ffffff;
   transition-duration: 0.5s;
-}
-
-/* Pricing */
-section.pricing {
-  background: #007bff;
-  background: linear-gradient(to right, #0062e6, #33aeff);
-}
-
-.pricing .card {
-  border: none;
-  border-radius: 1rem;
-  transition: all 0.2s;
-  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
-}
-
-.pricing hr {
-  margin: 1.5rem 0;
-}
-
-.pricing .card-title {
-  margin: 0.5rem 0;
-  font-size: 0.9rem;
-  letter-spacing: 0.1rem;
-  font-weight: bold;
-}
-
-.pricing .card-price {
-  font-size: 3rem;
-  margin: 0;
-}
-
-.pricing .card-price .period {
-  font-size: 0.8rem;
-}
-
-.pricing ul li {
-  margin-bottom: 1rem;
-}
-
-.pricing .text-muted {
-  opacity: 0.7;
-}
-
-.pricing .btn {
-  font-size: 80%;
-  border-radius: 5rem;
-  letter-spacing: 0.1rem;
-  font-weight: bold;
-  padding: 1rem;
-  opacity: 0.7;
-  transition: all 0.2s;
-}
-
-/* Hover Effects on Card */
-
-@media (min-width: 992px) {
-  .pricing .card:hover {
-    margin-top: -0.25rem;
-    margin-bottom: 0.25rem;
-    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
-  }
-  .pricing .card:hover .btn {
-    opacity: 1;
-  }
 }
 
 /* Video Header */
@@ -194,6 +137,14 @@ header .overlay {
 }
 
 /* Full Page Image Header */
+.aboutmasthead {
+  height: 50vh;
+  min-height: 300px;
+  background-image: url("/img/masthead/about.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .ullerickmasthead {
   height: 100vh;
   min-height: 500px;
