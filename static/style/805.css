@@ -153,32 +153,8 @@ header .overlay {
 }
 
 /* Full Page Image Header */
-.header {
-  height: 50vh;
-  min-height: 300px;
-  background-image: url("/img/masthead/header.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: linear-gradient(to bottom right, #434343, #000000);
-}
-.aboutmasthead {
-  height: 50vh;
-  min-height: 300px;
-  background-image: url("/img/masthead/about.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.ullerickmasthead {
-  height: 100vh;
-  min-height: 500px;
-  background-image: url("/img/masthead/mattullerick.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.iscofmasthead {
+
+.masthead1 {
   height: 100vh;
   min-height: 500px;
   background-image: url("/img/masthead/iscof1.png");
@@ -186,10 +162,18 @@ header .overlay {
   background-position: center;
   background-repeat: no-repeat;
 }
-.projectmasthead {
-  height: 50vh;
+.masthead2 {
+  height: 100vh;
   min-height: 500px;
-  background-image: url("/img/project619/header.png");
+  background-image: url("/img/masthead/hopeorganization.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.masthead3 {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("/img/masthead/hackathonbythesea.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
