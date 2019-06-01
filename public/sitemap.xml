@@ -3,22 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/805devops/</loc>
-    <lastmod>2018-10-03T16:43:47-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/805family/</loc>
-    <lastmod>2018-10-03T16:43:47-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/805productions/</loc>
-    <lastmod>2018-10-03T16:43:47-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://example.org/about/</loc>
+    <lastmod>2018-10-03T16:43:47-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/community/</loc>
     <lastmod>2018-10-03T16:43:47-07:00</lastmod>
   </url>
   
@@ -28,7 +18,7 @@
   </url>
   
   <url>
-    <loc>http://example.org/project619/</loc>
+    <loc>http://example.org/events/</loc>
     <lastmod>2018-10-03T16:43:47-07:00</lastmod>
   </url>
   
@@ -39,6 +29,11 @@
   
   <url>
     <loc>http://example.org/team/</loc>
+    <lastmod>2018-10-03T16:43:47-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/workshops/</loc>
     <lastmod>2018-10-03T16:43:47-07:00</lastmod>
   </url>
   
