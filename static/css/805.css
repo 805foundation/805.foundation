@@ -1,0 +1,180 @@
+/* Global */
+body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  border-left: 0;
+  font-family: "Montserrat", sans-serif;
+}
+/* Opacity */
+.opacity-8 {
+  opacity: 0.85;
+}
+/* Background Colors */
+
+.bg-rock {
+  background-image: linear-gradient(to bottom right, #969696, #000000);
+}
+.bg-peach {
+  background-image: linear-gradient(to bottom right, #ff758c, #ff7eb3);
+}
+.bg-blue {
+  background-image: linear-gradient(to bottom right, #89f7fe, #66a6ff);
+}
+.bg-black {
+  background-color: #000000;
+}
+.bg-foundation {
+  background-color: #43c4ef;
+}
+.bg-contact {
+  background-image: url("/img/contact/globe.jpg");
+  background-color: #000000;
+}
+
+/* Font */
+.font-foundation {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Text Colors */
+.text-black {
+  color: #000000;
+}
+.text-foundation {
+  color: #262626;
+}
+.text-foundation:hover {
+  color: #43c4ef;
+  transition-duration: 0.6s;
+}
+.text-project {
+  color: #262626;
+}
+.text-project:hover {
+  color: #ff758c;
+  transition-duration: 0.6s;
+}
+.text-invert {
+  color: #ffffff;
+}
+.text-invert:hover {
+  color: #43c4ef;
+  transition-duration: 0.6s;
+}
+
+/* Border Width */
+.border-0 {
+  border-width: 0em;
+}
+
+/* Buttons */
+.btn-foundation {
+  border-width: 1px;
+  border-color: #ffffff;
+  background-color: #ffffff;
+  color: #4d4d4d;
+}
+.btn-foundation:hover {
+  border-width: 1px;
+  border-color: #43c4ef;
+  background-color: #43c4ef;
+  color: #ffffff;
+}
+.btn-outline-foundation {
+  border-width: 1px;
+  border-color: #43c4ef;
+  background-color: transparent;
+  color: #43c4ef;
+}
+.btn-outline-foundation:hover {
+  background-color: #43c4ef;
+  color: #ffffff;
+  transition-duration: 0.5s;
+}
+
+.img-clients {
+  filter: grayscale(100%);
+}
+.img-clients:hover {
+  filter: grayscale(0%);
+  transition-duration: 0.6s;
+}
+
+/* Video Header */
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black
+      no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+
+/* Full Page Image Header */
+
+.masthead1 {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("/img/masthead/iscof1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.masthead2 {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("/img/masthead/hopeorganization.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.masthead3 {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("/img/masthead/hackathonbythesea.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

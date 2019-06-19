@@ -214,51 +214,21 @@
 
 <div class="container py-2">
   <div class="card-deck">
+    {{ range.Pages }}
     <div class="card">
-      <a href="" class="text-decoration-none">
-        <img src="/img/masthead/survivor.png" class="card-img-top" alt="..." />
+      <a href="{{ .URL }}" class="text-decoration-none">
+        <img src="{{ .Params.caseThumbnail }}" class="card-img-top" alt="..." />
         <div class="card-body text-foundation">
           <h6 class="card-title text-monospace text-secondary">
-            RANCHO CAMPANA HIGH SCHOOL
+            {{ .Params.caseOrganization }}
           </h6>
           <p class="card-text font-weight-bold">
-            The Truth Is Hard
+            {{ .Title }}
           </p>
         </div>
       </a>
     </div>
-
-    <div class="card">
-      <a href="" class="text-decoration-none">
-        <img src="/img/masthead/rcspeaks.png" class="card-img-top" alt="..." />
-        <div class="card-body text-foundation">
-          <h6 class="card-title text-monospace text-secondary">
-            RANCHO CAMPANA HIGH SCHOOL
-          </h6>
-          <p class="card-text font-weight-bold">
-            The Truth Is Hard
-          </p>
-        </div>
-      </a>
-    </div>
-
-    <div class="card">
-      <a href="" class="text-decoration-none">
-        <img
-          src="/img/masthead/hackiloilo.png"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body text-foundation">
-          <h6 class="card-title text-monospace text-secondary">
-            RANCHO CAMPANA HIGH SCHOOL
-          </h6>
-          <p class="card-text font-weight-bold">
-            The Truth Is Hard
-          </p>
-        </div>
-      </a>
-    </div>
+    {{ end }}
   </div>
 </div>
 

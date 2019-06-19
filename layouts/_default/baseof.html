@@ -6,15 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description" />
     <link rel="icon" href="/img/logo/circle.png" type="image" />
-    <title>805 Foundation</title>
+    <title> {{ if .Title }} {{ .Title }} | {{ end }} 805 Foundation </title>
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
+
     <!-- Font Awesome CSS -->
     <link
       rel="stylesheet"
@@ -39,7 +33,8 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="/style/805.css" />
+    <link rel="stylesheet" href="/css/swoolu.css" />
+    <link rel="stylesheet" href="/css/805.css" />
   </head>
   <body class="">
     <div id="navbar-container">{{ partial "navbar" . }}</div>

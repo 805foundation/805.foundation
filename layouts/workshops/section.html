@@ -6,6 +6,8 @@
   <h1 class="text-foundation">Full Catalog</h1>
 </div>
 
+{{ range.Pages }}
+
 <div class="container">
   <div class="card mb-3" style="max-width: 100%;">
     <div class="row no-gutters">
@@ -18,20 +20,20 @@
       </div>
       <div class="col-md-9">
         <div class="card-body">
-          <h1 class="card-title">Web Development</h1>
-          <h4 class="card-title">@Mira Mesa High School</h4>
-          <h6 class="card-title">September 21, 2019 / 9:00AM - 12:00PM</h6>
+          <h1 class="card-title">{{ .Title }}</h1>
+          <h4 class="card-title">@ {{ .Params.eventLocation }}</h4>
+          <h6 class="card-title">{{ .Params.eventDate }}</h6>
           <h5 class="card-text">
-            Master the languages of the web: HTML, CSS, JavaScript, and SQL.
-            This path is great for budding front-end or back-end engineers!
+            {{ .Params.oneLineDescription }}
           </h5>
-          <a href="/courses/" class="">
-            <button class="btn btn-outline-foundation px-5">RSVP</button>
+          <a href="{{ .Params.externalLink }}" class="">
+            <button class="btn btn-outline-foundation px-5">Sign Up</button>
           </a>
         </div>
       </div>
     </div>
   </div>
 </div>
+{{ end }}
 
 {{ end }}
