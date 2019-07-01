@@ -1,0 +1,52 @@
+{{ define "main" }}
+<div class="py-4"></div>
+<div class="py-1"></div>
+<div class="container-fluid bg-dark opacity-8">
+  <div class="container">
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="p-4">
+          <a href="/events/" class="text-decoration-none text-secondary">
+            <h5 class="h4">Dicover</h5>
+          </a>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark sticky-top text-white">
+        <h1 class="">Today at 805</h1>
+        <button
+          class="navbar-toggler justify-content-end border-0 text-white"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-chevron-down fa-2x"></i>
+        </button>
+      </nav>
+    </div>
+  </div>
+</div>
+<img src="{{ .Params.eventImage }}" alt="" class="w-100" />
+
+<div class="container">
+  <div class="py-5"></div>
+  <h1 class="font-weight-bold">{{ .Title }}</h1>
+  <div class="py-3"></div>
+  <h4 class="">{{ .Params.eventDate }}</h4>
+  <h4 class="text-secondary">{{ .Params.eventLocation }}</h4>
+  <div class="py-3"></div>
+  <a href="{{ .Params.eventLink }}" target="_blank" class="">
+    <button class="btn btn-lg btn-outline-dark rounded-pill px-5">
+      Sign me up
+    </button>
+  </a>
+  <div class="py-3"></div>
+  <h5 class="">
+    {{ .Params.eventDesc }}
+  </h5>
+  <div class="py-5"></div>
+</div>
+
+{{ end }}
