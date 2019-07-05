@@ -28,24 +28,23 @@
     </div>
   </div>
 </div>
-<img src="{{ .Params.eventImage }}" alt="" class="w-100" />
+<img src="{{ .Params.Image }}" alt="" class="w-100" />
 
 <div class="container">
   <div class="py-5"></div>
   <h1 class="font-weight-bold">{{ .Title }}</h1>
-  <div class="py-3"></div>
+  <div class="py-1"></div>
+  <!-- <h5 class="">{{ .Description }}</h5> -->
   <h4 class="">{{ .Params.eventDate }}</h4>
-  <h4 class="text-secondary">{{ .Params.eventLocation }}</h4>
+  <h4 class="text-secondary">{{ .Params.Location }}</h4>
   <div class="py-3"></div>
-  <a href="{{ .Params.eventLink }}" target="_blank" class="">
+  <h4 class="">{{ .Content }}</h4>
+  <div class="py-4"></div>
+  <a href="{{ .Params.Link }}" target="_blank" class="">
     <button class="btn btn-lg btn-outline-dark rounded-pill px-5">
       Sign me up
     </button>
   </a>
-  <div class="py-3"></div>
-  <h5 class="">
-    {{ .Params.eventDesc }}
-  </h5>
   <div class="py-5"></div>
 </div>
 

@@ -1,0 +1,38 @@
+{{ define "main" }}
+
+<div class="container">
+  <div class="py-5"></div>
+  <div class="card-deck">
+    <div class="card hidden-md-up">
+      <img src="{{ .Params.Image }}" alt="" class="w-100" />
+    </div>
+    <div class="card border-0">
+      <h1 class="text-picton font-weight-bold">{{ .Title }}</h1>
+      <div class="py-4"></div>
+      <h6 class="font-weight-normal">{{ .Content }}</h6>
+      <div class="py-4"></div>
+      <div class="card-deck">
+        <div class="card border-0">
+          <input
+            class="btn btn-lg btn-dark rounded-pill py-2"
+            type="button"
+            value="Go Back"
+            onclick="history.back()"
+          />
+        </div>
+        <div class="card border-0">
+          <a href="" class="btn btn-lg btn-picton rounded-pill py-2">
+            Apply
+          </a>
+        </div>
+      </div>
+      <div class="py-2"></div>
+    </div>
+    <div class="card border-0 hidden-sm-down">
+      <img src="{{ .Params.Image }}" alt="" class="img-h-100" />
+    </div>
+  </div>
+  <div class="py-5"></div>
+</div>
+
+{{ end }}

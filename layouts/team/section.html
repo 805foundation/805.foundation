@@ -1,0 +1,117 @@
+{{ define "main" }}
+
+<div class="container text-center">
+  <div class="py-5"></div>
+  <div class="card border-0">
+    <img src="/img/undraw/team_spirit.svg" alt="" class=" card-img w-100" />
+    <div class="card-img-overlay py-5">
+      <div class="" style="height: 35%"></div>
+      <h1 class="">
+        <span class="text-white bg-orange px-5 py-2">
+          Our Team
+        </span>
+      </h1>
+    </div>
+  </div>
+  <div class="py-5"></div>
+</div>
+
+<div class="container-fluid bg-picton py-5 ">
+  <div class="container text-white col-6 py-5">
+    <h1 class="">
+      The people who work at 805 Foundation share the vision and values of our
+      community.
+    </h1>
+    <h4 class="">
+      We're driven by the idea that the best work is born from diligence,
+      craftsmanship, and fun.
+    </h4>
+  </div>
+</div>
+
+<div class="container text-center">
+  <div class="py-5"></div>
+  <h1 class="text-orange">Meet Our Team</h1>
+  <div class="py-3"></div>
+  <div class="card-deck">
+    {{ range first 3 .Pages }}
+    <div
+      class="card border-0 col-lg-4 col-md-6 col-sm-12 p-0"
+      data-toggle="modal"
+      data-target="#{{ .Title }}"
+    >
+      <img src="{{ .Params.Image }}" alt="" class="card-img" />
+      <div class="card-body text-center">
+        <h4 class="card-title">{{ .Params.Name}}</h4>
+        <h6 class="card-title">{{ .Params.Position}}</h6>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+  <div class="py-3"></div>
+  <div class="card-deck">
+    {{ range after 3 .Pages }}
+    <div
+      class="card border-0 col-lg-4 col-sm-12 p-0"
+      data-toggle="modal"
+      data-target="#{{ .Title }}"
+    >
+      <img src="{{ .Params.Image }}" alt="" class="card-img" />
+      <div class="card-body text-center">
+        <h4 class="card-title">{{ .Params.Name}}</h4>
+        <h6 class="card-title">{{ .Params.Position}}</h6>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+  <div class="py-3"></div>
+  <div class="py-3"></div>
+</div>
+
+{{ range.Pages }}
+<div
+  class="modal fade"
+  id="{{ .Title }}"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content bg-white">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">
+          {{ .Params.Name }}, {{ .Params.Position }}
+        </h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="{{ .Params.Image }}" alt="" class="w-100" />
+        <h6 class="">{{ .Content }}</h6>
+      </div>
+      <div class="modal-footer">
+        <a
+          href="{{ .Params.LinkedIn }}"
+          target="_blank"
+          class="text-decoration-none text-picton"
+        >
+          <i class="fab fa-linkedin fa-3x"></i>
+        </a>
+        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+{{ end }}

@@ -1,0 +1,141 @@
+{{ define "main" }}
+<div class="py-4"></div>
+<img src="/img/banner/careers.png" alt="" class="w-100" />
+
+<div class="container">
+  <div class="py-5"></div>
+  <div class="card-deck">
+    <div class="card border-0 hidden-md-up">
+      <img src="/img/undraw/creative_team.svg" alt="" class="w-100" />
+    </div>
+    <div class="py-3"></div>
+    <div class="card border-0">
+      <h1 class="text-picton">How we bring creativity to life?</h1>
+      <div class="py-2"></div>
+      <h3 class="text-dark font-weight-normal">
+        We encourage students to put their skills to the test by working with a
+        diverse group of peers to succeed in philanthropy, content creation, and
+        product or service development in their respective fields.
+      </h3>
+    </div>
+    <div class="card border-0 hidden-lg-down">
+      <img src="/img/undraw/creative_team.svg" alt="" class="w-100" />
+    </div>
+  </div>
+  <div class="py-5"></div>
+</div>
+
+<hr />
+
+<div class="container text-center col-lg-6 col-11">
+  <div class="py-4"></div>
+  <h2 class="font-weight-normal">
+    At 805 Foundation, the world’s next generation of engineers, designers, and
+    thought leaders are shaping their future.
+  </h2>
+  <div class="py-4"></div>
+  <hr class="" />
+  <div class="py-5"></div>
+  <h1 class="">Open Positions</h1>
+  <div class="py-3"></div>
+  <h6 class="">
+    We’re looking for people to join the team who are as excited as we are to
+    help build the platform that empowers the future generation to be
+    successful.
+  </h6>
+  <div class="py-5"></div>
+</div>
+
+<div class="container text-center">
+  <div class="card-deck">
+    {{ range.Pages }}
+    <div class="card col-lg-4 col-md-6 col-12 p-5">
+      <a href="{{ .URL }}" class="text-decoration-none">
+        <h1 class="text-picton grayscale">{{ .Params.Number }}</h1>
+        <h5 class="text-picton grayscale">{{ .Title }}</h5>
+      </a>
+    </div>
+    {{ end }}
+  </div>
+  <div class="py-5"></div>
+</div>
+
+<img src="/img/masthead/careers.png" alt="" class="w-100" />
+
+<div class="container">
+  <div class="py-5"></div>
+  <h1 class="text-center text-orange">Perks and Benefits</h1>
+  <div class="py-5"></div>
+  <div class="card-deck">
+    <div class="row">
+      <div class="card border-0 col-lg-6 col-md-6 col-12">
+        <h5 class="font-weight-bold pb-2">Freedom of creativity</h5>
+        <h6 class="font-weight-normal">
+          We encourage our interns to take the initiative to create their own
+          events, programs, products and services. Our interns work at full
+          autonomy and have every opportunity to choose what type of projects
+          they would like to work on. Typically they choose porjects they know
+          will help them advance them in their professional field of endeavors.
+        </h6>
+      </div>
+      <div class="card border-0 col-lg-6 col-md-6 col-12">
+        <h5 class="font-weight-bold pb-2">Network with professionals</h5>
+        <h6 class="font-weight-normal">
+          Our teams actively participate in outside events such as film
+          festivals, hackathons, and pitch competitions where the have multiple
+          opportunities to meet like-minded peers and professionals in their
+          respective industires.
+        </h6>
+      </div>
+    </div>
+    <div class="py-4"></div>
+    <div class="row">
+      <div class="card border-0 col-lg-6 col-md-6 col-12">
+        <h5 class="font-weight-bold pb-2">Mentorship for progress</h5>
+        <h6 class="font-weight-normal">
+          Learning about our fields of interest in class and through personal
+          projects are great ways of improving our skills and expanding on our
+          knowledge. However, nothing is as good as having a mentor who has
+          experience going down the same path we are moving towards. It's
+          invaluable to have mentor who can answer specific questions, give
+          advice, and update us on the current trends in the industry.
+        </h6>
+      </div>
+
+      <div class="card border-0 col-lg-6 col-md-6 col-12">
+        <h5 class="font-weight-bold pb-2">Culture of entrepreneurship</h5>
+        <h6 class="font-weight-normal">
+          Many of have ideas of events, programs, products or services we would
+          like to share with the world. Creating an entirely new club and
+          dealing with univsersity banking or regulations get complicated. Use
+          our back-end to launch your startup. As a non-profit organization, a
+          recognized 501 (c)(3), we are able to provide students with software,
+          mentors, interns, banking, etc.
+        </h6>
+      </div>
+    </div>
+    <div class="py-4"></div>
+    <div class="row">
+      <div class="card border-0 col-lg-6 col-md-6 col-12">
+        <h5 class="font-weight-bold pb-2">Unpaid Intern Status</h5>
+        <h6 class="font-weight-normal">
+          A lot of students today build their own projects or products. Why not
+          do the things you love to do while building your resume?
+        </h6>
+      </div>
+      <div class="card border-0 col-lg-6 col-md-6 col-12">
+        <h5 class="font-weight-bold pb-2">Fun and collaborative experience</h5>
+        <h6 class="font-weight-normal">
+          Work with a diverse group of people who can pitch ideas, work with you
+          on your projects, and have fun doing it!
+        </h6>
+      </div>
+    </div>
+  </div>
+  <div class="py-5"></div>
+</div>
+
+{{ partial "mailchimpform" . }}
+{{ partial "contactform" . }}
+
+{{ end }}

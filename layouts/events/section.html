@@ -57,14 +57,14 @@
       </div>
       {{ range.Pages }}
       <div class="carousel-item">
-        <img src="{{ .Params.eventImage }}" class="d-block w-100" alt="..." />
+        <img src="{{ .Params.Image }}" class="d-block w-100" alt="..." />
         <div class="carousel-caption text-left d-none d-md-block">
           <a href="{{ .URL }}" class="text-decoration- text-white">
             <h1 class="">{{ .Title }}</h1>
-            <h2 class="">{{ .Params.eventSubtitle }}</h2>
+            <h2 class="">{{ .Description }}</h2>
           </a>
           <h4>{{ .Params.eventDate }}</h4>
-          <h4>{{ .Params.eventLocation }}</h4>
+          <h4>{{ .Params.Location }}</h4>
         </div>
       </div>
       {{ end }}
@@ -90,13 +90,55 @@
   </div>
 </div>
 
-<div class="container col-lg-7 col-11">
-  <div class="py-3"></div>
-  <h2 class="text-center text-dark">
-    Learn, create, and do more with the products you love. Join free sessions at
-    805 Foundation.
-  </h2>
-  <div class="py-3"></div>
+<div class="container-fluid bg-light py-5">
+  <div class="container col-lg-8 col-11 py-5">
+    <div class="py-3"></div>
+    <h1 class="text-center text-dark">
+      Learn, create, and do more with the products you love. Join free sessions
+      at 805 Foundation.
+    </h1>
+    <div class="py-3"></div>
+  </div>
+</div>
+
+<div class="container-fluid bg-light">
+  <div class="card bg-transparent border-0 text-center border-0">
+    <img src="/img/masthead/software.png" alt="" class=" card-img w-100" />
+    <div class="card-img-overlay py-5">
+      <div class="" style="height: 45%"></div>
+      <h1 class="hidden-lg-down">
+        <span class="text-white bg-orange px-5 pb-1">
+          Coding & Apps
+        </span>
+      </h1>
+      <h3 class="hidden-lg-up hidden-sm-down">
+        <span class="text-white bg-orange px-5 pb-1">
+            Coding & Apps
+        </span>
+      </h3>
+      <h6 class="hidden-md-up">
+        <span class="text-white bg-orange px-5 pb-1">
+            Coding & Apps
+        </span>
+      </h6>
+      
+    </div>
+  </div>
+  <div class="container col-lg-8 col-11">
+    <div class="py-5"></div>
+    <h1 class="text-center text-dark">
+      Learn essential photo skills, experiment with portraiture, and even break
+      the rules for more artful photos.
+    </h1>
+    <div class="py-5"></div>
+  </div>
+  {{ range .Pages }}  
+  <div class="card">
+    <img src="{{ .Params.Image }}" alt="" class="w-100">
+    <h1 class="p-5">{{ .Title }}</h1>
+  </div>
+  <div class="py-5"></div>
+  {{ end }}
 </div>
 
 {{ end }}

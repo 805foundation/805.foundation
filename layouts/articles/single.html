@@ -1,0 +1,37 @@
+{{ define "main" }}
+
+<div class="container">
+  <div class="py-5"></div>
+  <div class="py-1"></div>
+  <h1 class="text-serif font-weight-bold">{{ .Title }}</h1>
+  <h6 class="text-muted text-serif">{{ .Params.blogDate }}</h6>
+  <div class="py-3"></div>
+  <img src="{{ .Params.Image }}" alt="" class="w-100" />
+
+  <div class="py-3"></div>
+
+  <div class="card-group">
+    <div class="card border-0 col-lg-9 col-12">
+      <p class="text-serif">{{ .Content }}</p>
+    </div>
+    <div class="card border-0 col-lg-3 col-12">
+      <h6 class="text-orange font-weight-bold">Keywords:</h6>
+      <p class="">{{ .Params.Tags }}</p>
+      <div class="pb-1 bg-picton"></div>
+
+      <div class="py-3"></div>
+
+      <h6 class="text-orange font-weight-bold">External:</h6>
+      <a href="{{ .Params.Links }}" class="text-decoration-none text-picton">
+        <p class="">
+          {{ .Params.Links }}
+        </p>
+      </a>
+      <div class="pb-1 bg-picton"></div>
+    </div>
+  </div>
+
+  <div class="py-5"></div>
+</div>
+
+{{ end }}
