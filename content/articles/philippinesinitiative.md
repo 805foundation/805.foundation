@@ -1,7 +1,7 @@
 ---
-title: "Our Origin Story"
-Description: Lorem Ipsum
-date: 2019-04-03T16:43:47-07:00
+title: "Philippines Initiative"
+Description: Learn about our mission in Philippines
+date: 2019-04-08-03T16:43:47-07:00
 draft: false
 
 Toggle: 
